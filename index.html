@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4a0610">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title id="page-title">Meet &amp; Jainy – Engagement Invitation</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Noto+Sans+Gujarati:wght@500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+Devanagari:wght@700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap"
@@ -34,7 +38,8 @@
 
     html {
       scroll-behavior: smooth;
-      height: 100%
+      height: 100%;
+      background: #4a0610
     }
 
     body {
@@ -43,9 +48,7 @@
       min-height: 100%;
       overflow-x: hidden;
       background: radial-gradient(circle at 20% 0%, #C2185B 0, transparent 45%), radial-gradient(circle at 90% 30%, #FF9F1C55 0, transparent 40%), linear-gradient(170deg, #6E0C12, #A1141C 45%, #7A0B52);
-      background-attachment: fixed;
-      padding-top: env(safe-area-inset-top, 0px);
-      padding-bottom: env(safe-area-inset-bottom, 0px)
+      background-attachment: fixed
     }
 
     body.lock {
@@ -104,12 +107,12 @@
     /* top bar */
     #bar {
       position: sticky;
-      top: env(safe-area-inset-top, 0px);
+      top: 0;
       z-index: 50;
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 10px 16px;
+      padding: calc(10px + env(safe-area-inset-top, 0px)) 16px 10px;
       margin: 0 auto;
       max-width: 520px;
       background: rgba(60, 5, 12, .55);
@@ -828,6 +831,134 @@
     }
 
     #open:active { transform: scale(.95) }
+
+    /* ── inside page: royal theme to match the gate ── */
+    body {
+      background:
+        radial-gradient(ellipse at 50% 30%, rgba(255, 159, 28, .2), transparent 60%),
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='340' height='170' viewBox='0 0 340 170' opacity='.28' fill='none' stroke='%23D4AF37' stroke-width='2.6'><g transform='translate(85 85) scale(1.05)'><circle r='70'/><circle r='66' stroke-dasharray='2 4'/><circle r='18'/><path transform='rotate(0)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(45)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(90)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(135)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(180)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(225)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(270)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(315)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><g transform='rotate(22.5)' opacity='.6'><path transform='rotate(0)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(45)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(90)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(135)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(180)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(225)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(270)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(315)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/></g></g><g transform='translate(255 0) scale(1.05)'><circle r='70'/><circle r='66' stroke-dasharray='2 4'/><circle r='18'/><path transform='rotate(0)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(45)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(90)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(135)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(180)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(225)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(270)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(315)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><g transform='rotate(22.5)' opacity='.6'><path transform='rotate(0)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(45)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(90)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(135)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(180)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(225)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(270)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(315)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/></g></g><g transform='translate(255 170) scale(1.05)'><circle r='70'/><circle r='66' stroke-dasharray='2 4'/><circle r='18'/><path transform='rotate(0)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(45)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(90)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(135)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(180)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(225)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(270)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(315)' d='M0 -20C14 -34 14 -50 0 -64C-14 -50 -14 -34 0 -20Z'/><g transform='rotate(22.5)' opacity='.6'><path transform='rotate(0)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(45)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(90)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(135)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(180)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(225)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(270)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/><path transform='rotate(315)' d='M0 -20C14 -34 14 -50 0 -50C-14 -50 -14 -34 0 -20Z'/></g></g></svg>") center top/340px 170px,
+        radial-gradient(ellipse at center, #7A0B1B 0, #4a0610 55%, #1f0206 100%);
+      background-attachment: fixed
+    }
+
+    body::before { display: none }
+
+    main { padding: 30px 28px calc(60px + env(safe-area-inset-bottom, 0px)); gap: 52px }
+
+    #bar {
+      background: rgba(40, 3, 8, .8);
+      border-bottom: 2px solid var(--gold)
+    }
+
+    .card {
+      background:
+        radial-gradient(circle at 50% 0, rgba(255, 159, 28, .25), transparent 55%),
+        linear-gradient(180deg, #8E0F1E, #5b0813 60%, #3d050c);
+      border: 3px solid var(--gold);
+      outline: 1px solid rgba(253, 232, 156, .6);
+      outline-offset: 6px;
+      border-radius: 26px;
+      box-shadow: 0 0 0 9px rgba(110, 12, 18, .9), 0 0 0 11px var(--gold), 0 24px 50px rgba(0, 0, 0, .6), inset 0 0 50px rgba(0, 0, 0, .45)
+    }
+
+    .card::before {
+      inset: 10px;
+      border-radius: 18px;
+      border: 1.5px dashed rgba(212, 175, 55, .6)
+    }
+
+    .guj { color: var(--gold); text-shadow: 0 1px 0 #3a0508 }
+
+    .om {
+      color: var(--glow);
+      text-shadow: 0 0 22px #FF9F1C
+    }
+
+    .tag { color: #FFD9A8 }
+    .tag.i { color: #FFD9A8; opacity: .9 }
+
+    .names {
+      background: linear-gradient(100deg, #FDE89C 20%, #fff 38%, #FFB347 50%, #FDE89C 65%, #D4AF37);
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: none;
+      filter: drop-shadow(0 3px 10px rgba(255, 159, 28, .35));
+      animation: shim 5s ease-in-out infinite
+    }
+
+    .lin { color: #FFD9A8 }
+
+    .nat {
+      color: var(--glow);
+      background: rgba(0, 0, 0, .28);
+      border-color: var(--gold)
+    }
+
+    .amp { color: #FF9F1C }
+
+    .badge {
+      background: linear-gradient(135deg, #FFD36E, #D4AF37 50%, #B8860B);
+      color: #4a0610;
+      border: 2px solid var(--glow);
+      outline: 1px solid var(--gold);
+      outline-offset: 3px;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .6)
+    }
+
+    .badge big { color: #4a0610 }
+
+    .venue { color: #fff }
+    .addr { color: #FFD9A8 }
+
+    .plus {
+      background: rgba(0, 0, 0, .35);
+      color: var(--glow)
+    }
+
+    .cd h2 { color: var(--glow) }
+
+    .cdg div {
+      background: linear-gradient(160deg, rgba(0, 0, 0, .45), rgba(110, 12, 18, .6));
+      box-shadow: inset 0 0 14px rgba(0, 0, 0, .4)
+    }
+
+    .acts a,
+    .acts button {
+      border: 2px solid var(--glow);
+      outline: 1px solid var(--gold);
+      outline-offset: 3px;
+      background: linear-gradient(135deg, #FFD36E, #D4AF37 50%, #B8860B);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, .55), 0 0 22px rgba(255, 159, 28, .4), inset 0 1px 0 rgba(255, 255, 255, .6)
+    }
+
+    .acts svg { stroke: #4a0610 }
+
+    .hero {
+      border-radius: 170px 170px 26px 26px;
+      border: 3px solid var(--gold);
+      outline: 1px solid rgba(253, 232, 156, .6);
+      outline-offset: 6px;
+      box-shadow: 0 0 0 9px rgba(110, 12, 18, .9), 0 0 0 11px var(--gold), 0 24px 50px rgba(0, 0, 0, .6)
+    }
+
+    .grid { gap: 18px }
+
+    .grid img {
+      border: 3px solid var(--gold);
+      border-radius: 80px 80px 18px 18px;
+      outline: 1px solid rgba(253, 232, 156, .6);
+      outline-offset: 4px
+    }
+
+    .reel {
+      border-radius: 120px 120px 26px 26px;
+      border: 4px solid #1c0509;
+      outline: 3px solid var(--gold);
+      outline-offset: 0;
+      box-shadow: 0 0 0 8px rgba(110, 12, 18, .9), 0 0 0 10px var(--gold), 0 24px 50px rgba(0, 0, 0, .6)
+    }
 
     @media(max-width:380px) {
       #gate {
